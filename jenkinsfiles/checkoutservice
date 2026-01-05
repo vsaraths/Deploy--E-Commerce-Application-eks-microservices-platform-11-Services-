@@ -9,7 +9,7 @@ pipeline {
         }
         stage('Checkout from Git') {
             steps {
-                git branch: 'master', url: 'https://github.com/arumullayaswanth/Microservices-E-Commerce-eks-project.git'
+                git branch: 'master', url: 'https://github.com/vsaraths/Deploy--E-Commerce-Application-eks-microservices-platform-11-Services-.git'
             }
         }
         stage("Docker Image Build") {
@@ -41,11 +41,11 @@ pipeline {
         }
         stage('Update Deployment file') {
             environment {
-                GIT_REPO_NAME = "Microservices-E-Commerce-eks-project"
-                GIT_EMAIL = "Yaswanth.arumulla@gmail.com"
-                GIT_USER_NAME = "arumullayaswanth"
+                GIT_REPO_NAME = "Deploy--E-Commerce-Application-eks-microservices-platform-11-Services-"
+                GIT_EMAIL = "vsarath732@gmail.com"
+                GIT_USER_NAME = "vsaraths"
                 IMAGE_NAME = "checkoutservice"
-                REPO_URL = "242201296943.dkr.ecr.us-east-1.amazonaws.com/checkoutservice"
+                REPO_URL = "682949593614.dkr.ecr.us-east-1.amazonaws.com/checkoutservice"
                 YAML_FILE = "checkoutservice.yaml"
             }
             steps {

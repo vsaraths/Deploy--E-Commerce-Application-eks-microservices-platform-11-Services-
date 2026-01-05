@@ -3,10 +3,9 @@ provider "aws" {
 }
 
 resource "aws_s3_bucket" "bucket1" {
-  bucket = "aluruarumullaa1"
-
+  bucket = "ecommerce-eks-us-east-1-vsarath"
   tags = {
-    Name        = "aluruarumullaa1"
+    Name        = "ecommerce-eks"
     Environment = "dev"
   }
 }
@@ -19,10 +18,9 @@ resource "aws_s3_bucket_versioning" "bucket1_versioning" {
 }
 
 resource "aws_s3_bucket" "bucket2" {
-  bucket = "arumullaaluruu1"
-
+  bucket = "ecommerce-eks-us-east-1-vsarath-2"
   tags = {
-    Name        = "arumullaaluruu1"
+    Name        = "ecommerce-eks-2"
     Environment = "dev"
   }
 }

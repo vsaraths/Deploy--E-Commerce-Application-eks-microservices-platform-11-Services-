@@ -1,0 +1,6 @@
+- hosts: localhost
+  become: true
+  roles:
+    - docker
+    - jenkins
+    - k8s-tools
