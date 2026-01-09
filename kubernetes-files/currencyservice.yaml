@@ -28,7 +28,7 @@ spec:
               - ALL
           privileged: false
           readOnlyRootFilesystem: true
-        image: 682949593614.dkr.ecr.us-east-1.amazonaws.com/currencyservice:1
+        image: 682949593614.dkr.ecr.us-east-1.amazonaws.com/currencyservice:4
         ports:
         - name: grpc
           containerPort: 7000
@@ -63,4 +63,5 @@ spec:
   - name: grpc
     port: 7000
     targetPort: 7000
+
 
