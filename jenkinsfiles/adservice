@@ -19,7 +19,7 @@ pipeline {
 
         stage('Checkout from Git') {
             steps {
-                git branch: 'main', url: 'https://github.com/vsaraths/Deploy--E-Commerce-Application-eks-microservices-platform-11-Services-.git'
+                git branch: 'master', url: 'https://github.com/vsaraths/Deploy--E-Commerce-Application-eks-microservices-platform-11-Services-.git'
             }
         }
 
