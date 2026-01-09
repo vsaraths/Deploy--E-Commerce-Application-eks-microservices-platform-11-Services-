@@ -43,7 +43,7 @@ pipeline {
             environment {
                 GIT_REPO_NAME = "Deploy--E-Commerce-Application-eks-microservices-platform-11-Services-"
                 GIT_EMAIL = "vsarath732@gmail.com"
-                GIT_USER_NAME = "682949593614"
+                GIT_USER_NAME = "vsaraths"
                 IMAGE_NAME = "productcatalogservice"
                 REPO_URL = "682949593614.dkr.ecr.us-east-1.amazonaws.com/productcatalogservice"
                 YAML_FILE = "productcatalogservice.yaml"
