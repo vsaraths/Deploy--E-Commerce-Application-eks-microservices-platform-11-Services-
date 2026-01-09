@@ -28,7 +28,7 @@ spec:
               - ALL
           privileged: false
           readOnlyRootFilesystem: true
-        image: 682949593614.dkr.ecr.us-east-1.amazonaws.com/paymentservice:1
+        image: 682949593614.dkr.ecr.us-east-1.amazonaws.com/paymentservice:2
         ports:
         - containerPort: 50051
         env:
@@ -62,4 +62,5 @@ spec:
   - name: grpc
     port: 50051
     targetPort: 50051
+
 
