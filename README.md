@@ -1,4 +1,4 @@
-##🛒 E-Commerce Application on AWS EKS – Microservices Platform (11 Services)
+###🛒 E-Commerce Application on AWS EKS – Microservices Platform (11 Services)
 
 This project showcases a production-style E-Commerce microservices platform deployed on AWS EKS using modern DevOps practices. It covers complete automation from infrastructure provisioning to application deployment using Terraform, Jenkins, Docker, ECR, Kubernetes, Helm, and Argo CD.
 
