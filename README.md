@@ -1,14 +1,14 @@
-###🛒 E-Commerce Application on AWS EKS – Microservices Platform (11 Services)
+# 🛒 E-Commerce Application on AWS EKS – Microservices Platform (11 Services)
 
 This project showcases a production-style E-Commerce microservices platform deployed on AWS EKS using modern DevOps practices. It covers complete automation from infrastructure provisioning to application deployment using Terraform, Jenkins, Docker, ECR, Kubernetes, Helm, and Argo CD.
 
-##Inspired by:
+## Inspired by:
 📖 Medium Blog:
 https://medium.com/@yaswanth.arumulla/how-to-deploy-a-full-microservices-e-commerce-application-11-services-on-aws-eks-af1ba4c87ccf
 
-##🔥 Project Highlights
+## 🔥 Project Highlights
 
-#11 Microservices based E-Commerce application
+# 11 Microservices based E-Commerce application
 
 AWS EKS cluster provisioned using Terraform
 Jenkins for CI/CD pipeline automation
@@ -22,7 +22,7 @@ Jump Host EC2 for Jenkins + kubectl + Terraform execution
 
 Fully modular infrastructure design
 
-##🏗 Repository Structure
+## 🏗 Repository Structure
 .
 ├── ecr-terraform/           # Terraform to create ECR repositories
 ├── eks-terraform/           # Terraform to create EKS cluster
@@ -33,7 +33,7 @@ Fully modular infrastructure design
 ├── src/                     # Microservices source code
 ├── README.md
 
-##🚀 Architecture Flow
+## 🚀 Architecture Flow
 
 Code is pushed to GitHub
 Jenkins Pipeline:
@@ -45,7 +45,7 @@ Argo CD syncs changes to EKS automatically
 Helm manages releases and rollback
 Services become available via Kubernetes LoadBalancer / Ingress
 
-##⚙️ Prerequisites
+## ⚙️ Prerequisites
 
 AWS Account
 Terraform
@@ -55,7 +55,7 @@ Jenkins
 AWS CLI configured
 IAM permissions for EKS, EC2, ECR, S3
 
-##🛠 Deployment Steps
+## 🛠 Deployment Steps
 1. Create S3 Buckets (Terraform State Storage)
 cd s3-buckets
 terraform init
@@ -71,7 +71,7 @@ cd terraform_main_ec2
 terraform init
 terraform apply -auto-approve
 
-#This EC2 will:
+## This EC2 will:
 
 Run Jenkins
 Execute Terraform
@@ -83,7 +83,7 @@ terraform init
 terraform apply -auto-approve
 
 
-##Configure kubeconfig:
+## Configure kubeconfig:
 
 aws eks --region <region> update-kubeconfig --name <cluster-name>
 
@@ -110,7 +110,7 @@ kubectl rollout undo deployment <deployment-name>
 Using Helm:
 helm rollback <release-name> <revision-number>
 
-##🧹 Destroy Infrastructure (Cost Saving)
+## 🧹 Destroy Infrastructure (Cost Saving)
 
 Normal destroy:
 terraform destroy -auto-approve
@@ -125,7 +125,7 @@ ecr-terraform
 terraform_main_ec2
 eks-terraform
 
-##🎯 What This Project Proves
+## 🎯 What This Project Proves
 
 This single project demonstrates:
 End-to-end DevOps workflow
